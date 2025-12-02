@@ -1,0 +1,297 @@
+
+.aboutSection {
+  padding: 100px 0;
+  background-color: #000000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  font-family: 'Varela Round', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  margin-bottom: 80px;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.introText {
+  margin-bottom: 20px;
+}
+
+.leadParagraph {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.storyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.storyContent p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cccccc;
+  margin: 0;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.highlight {
+  text-align: center;
+  padding: 40px 30px;
+  background: #111111;
+  border: 1px solid #222222;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.highlight:hover {
+  transform: translateY(-8px);
+  border-color: #333333;
+  background: #1a1a1a;
+}
+
+.number {
+  display: block;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #999999;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+/* Personal Section */
+.personalSection {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.personalTitle {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 40px 0;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+.personalInterests {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.interest {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px;
+  background: #111111;
+  border: 1px solid #222222;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.interest:hover {
+  border-color: #333333;
+  background: #1a1a1a;
+  transform: translateY(-4px);
+}
+
+.interestIcon {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.interestText {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cccccc;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 80px 0;
+  }
+  
+  .sectionTitle {
+    margin-bottom: 40px;
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  
+  .textContent {
+    gap: 30px;
+  }
+  
+  .leadParagraph {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  
+  .storyContent p {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+  
+  .highlights {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .number {
+    font-size: 2.5rem;
+  }
+  
+  .personalSection {
+    margin-top: 40px;
+  }
+  
+  .personalTitle {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+  
+  .personalInterests {
+    gap: 24px;
+  }
+  
+  .interest {
+    padding: 20px;
+    gap: 16px;
+  }
+  
+  .interestIcon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .interestText {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutSection {
+    padding: 60px 0;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .textContent {
+    gap: 24px;
+  }
+  
+  .leadParagraph {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  
+  .storyContent p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .highlights {
+    gap: 20px;
+  }
+  
+  .highlight {
+    padding: 24px 16px;
+  }
+  
+  .number {
+    font-size: 2.2rem;
+  }
+  
+  .label {
+    font-size: 0.9rem;
+  }
+  
+  .personalSection {
+    margin-top: 30px;
+  }
+  
+  .personalTitle {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+  }
+  
+  .personalInterests {
+    gap: 20px;
+  }
+  
+  .interest {
+    padding: 18px;
+    gap: 14px;
+  }
+  
+  .interestIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .interestText {
+    font-size: 0.9rem;
+  }
+}
